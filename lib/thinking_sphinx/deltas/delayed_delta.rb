@@ -1,4 +1,4 @@
-require 'delayed/job'
+require 'delayed/job' unless defined?(Delayed::Job)
 
 require 'thinking_sphinx/deltas/delayed_delta/delta_job'
 require 'thinking_sphinx/deltas/delayed_delta/flag_as_deleted_job'
